@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="icon" type="image/x-icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdO1Hrj656HhcsfDI0dst_AP49krvpgucZqQ&usqp.ico">
+	<title>Water Effect</title>
+
+	<style>
+*{
+	margin: 0;
+	padding: 0;
+
+}			
+body
+{
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background: black;
+}
+
+.water h2
+{
+	position: absolute;
+	transform: translate(-50%,-50%);
+	font-size: 30vh;
+
+}
+.water h2:nth-child(1)
+{
+	
+	color: transparent;
+	-webkit-text-stroke: 2px /*#e25822*/ #69C6FF;
+}
+
+.water h2:nth-child(2)
+{
+	
+	color:/*#e25822 */ #69C6FF;	
+	animation: waterflow 4s ease-in-out infinite;	 
+
+}
+
+@keyframes waterflow
+{
+	0%,100%
+	{
+	clip-path: polygon(0 28%, 13% 35%, 19% 37%, 25% 40%, 32% 43%, 35% 46%, 40% 48%, 47% 49%, 57% 45%, 73% 40%, 79% 40%, 85% 41%, 92% 39%, 100% 46%, 99% 99%, 1% 97%);
+	}
+	50%
+	{
+			clip-path: polygon(1% 56%, 10% 54%, 15% 48%, 21% 45%, 28% 46%, 33% 42%, 42% 41%, 49% 45%, 57% 52%, 64% 55%, 74% 57%, 82% 53%, 91% 46%, 100% 36%, 99% 99%, 1% 97%);
+     }
+
+
+	</style>
+
+
+
+</head>
+<body>
+	<div class="water">
+		<h2>WATER </h2>
+		<h2>WATER</h2>
+	</div>
+	
+
+</body>
+</html>
+
+
+
+
